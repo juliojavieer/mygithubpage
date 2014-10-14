@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Anders';
+  src: url('../fonts/Anders/Anders.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+font-family: 'Voga';
+src: url("../fonts/Voga/VogaMedium.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(http://fonts.gstatic.com/s/raleway/v9/IczWvq5y_Cwwv_rBjOtT0w.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Raleway Medium'), local('Raleway-Medium'), url(http://fonts.gstatic.com/s/raleway/v9/CcKI4k9un7TZVWzRVT-T8xsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(http://fonts.gstatic.com/s/raleway/v9/JbtMzqLaYbbbCL9X6EvaIxsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+
+
+body{min-height:690px;padding:0;color:#323232;font-family:'Raleway'}
+section{position:relative;}
+section.max-page{width:100%;height:100%;}
+#page-header{}
+#page-header .header{width:100%;height:100%;overflow:hidden;position:relative;}
+#page-header .header img{width:100%;position:absolute;top:0%;min-height:100%;}
+#page-header .header .upon{background-color:rgba(0,0,0,0.8);font-family:'Voga';/*box-shadow:inset 0 -200px 100px -100px black;*/}
+#page-header .header .upon h1{font-size:105px;color:rgba(255,255,255,0.4);position:absolute;bottom:50%;margin:0 30px;letter-spacing:1px;width:100%;text-align:left;line-height:40px;}
+#page-header .header .upon h1 span{font-size:30px;letter-spacing:12px;color:rgba(255,255,255,0.5);}
+#page-header .icon-scroll{cursor:pointer;;position:absolute;bottom:0px;font-size:80px;color:#F0F0F0;padding:0}
+#page-header .icon-scroll.fixed{line-height:60px;position:fixed;top:0;transform:translateX(-50%);z-index:10;bottom:auto;font-size:55px;border:none;padding:0;color:white;}
+#page-header .icon-scroll.fixed span:before{content:'';}
+.max-page-size{position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;}
+
+.superior-nav{width:100%;height:60px;position:fixed;top:-60px;z-index:10;opacity:0;visibility:hidden;transform:scale(1);}
+.superior-nav.visible{opacity:1;visibility:visible;top:0;transform:scale(1);}
+.superior-nav a{text-align:center;min-width:110px;line-height:60px;color:white;font-size:18px;font-family:'Raleway';font-weight:700;cursor:pointer;}
+.superior-nav a.min-nav{display:none;font-size:40px;line-height:70px !important;min-width:60px;}
+.superior-nav a img{height:60px;margin:0 20px;}
+
+#minimal-nav{width:100%;height:calc(100% - 60px);position:fixed;bottom:100%;z-index:9;}
+#minimal-nav.visible{bottom:0;}
+
+/* Pages */
+
+#pg-about{color:#6C6C6C;background-image:url(http://www.weltpixel.com/cleo/cleo/assets/slide17/login-bg.jpg)}
+#pg-about #wrapper-about{padding:30px 0;position:absolute}
+

@@ -1,19 +1,76 @@
 <!DOCTYPE html>
-<html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Mygithubpage : ">
+		<title> MyAwesomeWebsite </title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+		<!-- Styles -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/outlined.css">
+		<link rel="stylesheet" href="css/icons.css">
+		<link rel="stylesheet" href="css/effects.css">
+		<link rel="stylesheet" href="css/myStyles.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/backgrounds.css">
+	</head>
 
-    <title>Hello World</title>
-  </head>
+	<body class="bg-clouds">
+		<nav class="superior-nav transition-all bg-bloody-mary" id="superior-nav">
+			<a class="left" ><span class="icon-home"> </span>Home</a>
+			<a class="left" ><span class="icon-profile-add"> </span>Contact</a>
+			<a class="right">Julio Javier<img class="circle" src="img/profile.jpg" /></a>
+			<a class="right min-nav" onclick="minimalNav();"><span id="icon-min-nav" class="icon-three-stripes-horiz"> </span></a>
+		</nav>
+		<nav id="minimal-nav" class="bg-clouds transition-all">
 
-  <body style="background:red">
+		</nav>
+		<section id="page-header" class="bg-black max-page max-height">
+			<div class="header">
+				<img id="image-header" src="img/header2.jpg" />
+				<div id="colorHeader" class="max-page-size upon transition-bg-slow">
+					<h1 class="transition-all">Julio Javier
+					<br />
+					<span>Web Developer</span></h1>
 
-    
+				</div>
+			</div>
+			<a id="icon-scroll" onclick="_scrollToId('pg-about');" class="icon-scroll center-transform-x transition-all"> <span class="ic-arrow-down3"> </span> </a>
+		</section>
+		<section id="pg-about" class="bg-clouds max-page max-height bg-fixed bg-cover">
+			<div id="wrapper-about" class="absolute center-transform-y bg-fixed">
+				<h1 class="tc title title-font ls-10 mar-title">About</h1>
+				<p class="central-p desc-font tc transition-all">
+					Hi, my name is Julio Javier Peñailillo, born in Temuco, Chile in 1993, I'm studied telecommunications in the high school
+					and now I am studying computer science in civil engineering Temuco Catholic University.
+					<br />
+					<br />
+					I like programming web pages and keep up to date with the latest web trends such as one page, I like to visit websites
+					for inspiration and develop my own pages
+				</p>
+			</div>
 
-  </body>
+		</section>
+		<section class="bg-black max-page max-height">
+
+		</section>
+
+		<p id="ej" style="position:fixed;bottom:0;color:white;font-size:40px;z-index:1000000"></p>
+
+		<!-- JavaScript at the bottom for fast page loading -->
+		<script src="js/libs/jquery-1.9.0.js"></script>
+		<script defer src="js/script.js"></script>
+		<script defer src="js/responsive.js"></script>
+	</body>
 </html>

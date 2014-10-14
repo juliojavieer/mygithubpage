@@ -1,0 +1,20 @@
+@media screen and (max-width:950px){
+	.central-p{margin:auto 5%}
+}
+
+@media screen and (max-width:720px){
+	#page-header .header .upon h1{font-size:30px;letter-spacing:8px;text-align:center;line-height:20px;}
+	#page-header .header .upon h1 span{font-size:20px;letter-spacing:8px;text-align:center;}
+}
+@media screen and (max-width:600px){
+	.superior-nav a{display:none;}
+	.superior-nav a.min-nav{display:block;}
+	#page-header .icon-scroll{font-size:30px;}
+	
+	.desc-font{font-size:14px;}
+}
+
+@media screen and (max-width:450px){
+	
+	
+}

@@ -1,0 +1,41 @@
+.center-transform-x{left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);}
+.center-transform-y{top :50%;transform:translateY(-50%);-webkit-transform:translateY(-50%);}
+.center-transform  {top:50%;left:50%;transform:translateX(-50%) translateY(-50%);-webkit-transform:translateX(-50%) translateY(-50%);}
+
+.bg-cover{background-size:cover;background-position:center;background-repeat:no-repeat;}
+.bg-fixed{background-attachment:fixed;}
+
+.left{float:left;}
+.right{float:right;}
+.circle{border-radius:50%;overflow:hidden;}
+.transition-all{transition:0.5s all;}
+.transition-all-fast{transition:0.2s all;}
+.transition-transform{transition:0.5s transform;}
+.transition-bg{transition:0.5s background;}
+.transition-bg-slow{transition:1s background;}
+.girar{animation:girar 2s infinite;-webkit-animation:girar 2s infinite;}
+.hidden{opacity:0;visibility:hidden;}
+.visible{opacity:1;visibility:visible;}
+.small-font{font-size:12px;}
+.desc-font{font-size:18px;}
+.title-font{font-size:80px;}
+.ls-10{letter-spacing:10px;}
+.central-p{margin:auto 20%}
+.img-buttom{position:absolute;bottom:0;}
+.im-scroll-btn{bottom:-100px;}
+.no-bulge{max-width:100%;max-height:100%;}
+.tc{text-align:center}
+.title{font-family:'Voga';text-shadow:2px 2px 2px black;}
+.mar-title{margin:0;margin-bottom:25px;}
+.max-width{width:100%;};
+.absolute{position:absolute}
+@keyframes girar{
+	0%  {transform:rotateZ(-20deg);}
+	50% {transform:rotateZ( 20deg);}
+	100%{transform:rotateZ(-20deg);}
+}
+@-webkit-keyframes girar{
+	0%  {-webkit-transform:rotateZ(-20deg);}
+	50% {-webkit-transform:rotateZ( 20deg);}
+	100%{-webkit-transform:rotateZ(-20deg);}
+}
